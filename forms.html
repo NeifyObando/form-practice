@@ -5,60 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form action="#" method="post">
         <fieldset>
-            <legend>Add user</legend>
+            <legend class="legend">Add user</legend>
+            <div class="container">
 
-            <div>
-                <label for="firstName">First name</label>
+            <div class="firstName">
+                <label for="firstName">First name:</label>
                 <input type="text" id="firstName" name="first_name">
             </div>
-            <div>
-                <label for="lastName">Last name</label>
+            <div class="lastName">
+                <label for="lastName">Last name:</label>
                 <input type="text" id="lastName" name="last_name">
             </div>
-            <div>
-                <label for="emailAddress">Email address</label>
+            <div class="emailAddress">
+                <label for="emailAddress">Email address:</label>
                 <input type="email" id="emailAddress" name="email_address">
             </div>
-            <div>
-                <label for="Status">Status</label>
-                <select name="user_status_name" id="Status">
-                    <option value="select">Choose one</option>
-                    <option value="student">Student</option>
-                    <option value="instructor">Instructor</option>
-                    <option value="guest">Guest</option>
-                </select>
+            <div class="status-date">
+                <div class="Status">
+                    <label for="Status">Status:</label>
+                    <div class="options">
+                        <select name="user_status_name" id="Status">
+                            <option value="select">Choose one</option>
+                            <option value="student">Student</option>
+                            <option value="instructor">Instructor</option>
+                            <option value="guest">Guest</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="date">
+                    <label for="date">Date:</label>
+                    <input type="date" name="current_date">
+                </div>
             </div>
-            <div>
+            <div class="favorite">
                 <p>Choose your favorite programming language:</p>
-                <input type="radio" id="html" name="fav_language" value="HTML">
-                <label for="html">HTML</label><br>
-                <input type="radio" id="css" name="fav_language" value="CSS">
-                <label for="css">CSS</label><br>
-                <input type="radio" id="javascript" name="fav_language" value="JavaScript">
-                <label for="javascript">JavaScript</label>
+                <div class="languages">
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <label for="html">HTML</label><br>
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <label for="css">CSS</label><br>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                    <label for="javascript">JavaScript</label>
+                </div>
             </div>
-            <div>
-                <label for="comments">Comments</label>
+            <div class="comments">
+                <label for="comments">Comments:</label>
                 <textarea name="comments" id="comments" cols="15" rows="5"></textarea>
             </div>
-            <div>
-                <label for="date">Current date</label>
-                <input type="date" name="current_date">
+            <div class="checkbox">
+                <div class="subscribeNews">
+                    <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+                    <label for="subscribeNews">Sign up<br> for news</label>
+                </div>
+                <div class= "terms">
+                    <input type="checkbox" id="terms" name="agree" value="terms_conditions">
+                    <label for="terms">Agree to<br> terms</label>
+                </div>
             </div>
-            <div>
-                <input type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
-                <label for="subscribeNews">Sign up for newsletter</label>
-            </div>
-            <div>
-                <input type="checkbox" id="terms" name="agree" value="terms_conditions">
-                <label for="terms">Agree to terms and conditions</label>
-            </div>
-            <div>
+            <div class="button">
                 <button type="submit">Submit</button>
+            </div>
             </div>
         </fieldset>
     </form>
