@@ -1,2 +1,2 @@
 # form-practice
-Thos project was made to practice the form structure on HTML and the layout on CSS.
+This project was made to practice the forms structure on HTML and the layout on CSS.
